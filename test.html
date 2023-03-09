@@ -1,0 +1,90 @@
+<body>
+
+    <main>
+
+
+        <div class="about_timeline">
+
+            <div class="about_content left_content">
+                <img src="assets/img/wrc.png" class="about_img">
+                <div class="about_textbox">
+                    <h2>Wayamba Royal Collage</h2>
+                    <small>2018-2021</small>
+                    <p class="about_description">Hello world hello world hello world</p>
+                    <span class="left_container_arrow"></span>
+                </div>
+            </div>
+
+            <div class="about_content left_content">
+                <img src="assets/img/wrc.png" class="about_img">
+                <div class="about_textbox">
+                    <h2>Wayamba Royal Collage</h2>
+                    <small>2018-2021</small>
+                    <p class="about_description">Hello world hello world hello world</p>
+                    <span class="left_container_arrow"></span>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <style>
+        main {
+            overflow: hidden;
+        }
+        
+        .about_timeline {
+            position: relative;
+        }
+        
+        .about_content {
+            padding: 10px 0 10px 30px;
+            position: relative;
+            margin: 10px 10px 10px 30px;
+        }
+        
+        .about_textbox {
+            padding: 10px 20px;
+            background-color: bisque;
+            position: relative;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+        
+        .left_content,
+        .right_content {
+            left: 0;
+        }
+        
+        .about_img {
+            position: absolute;
+            width: 40px;
+            border-radius: 50%;
+            left: -24px;
+            top: 32px;
+            z-index: 10;
+        }
+        
+        .about_timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            height: 100%;
+            background: orange;
+            top: 0;
+            left: 25px;
+            z-index: 9;
+        }
+        
+        .left_container_arrow {
+            height: 0;
+            width: 0;
+            position: absolute;
+            top: 28px;
+            z-index: 1;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            border-right: 15px solid bisque;
+            left: -13px;
+        }
+    </style>
+</body>
